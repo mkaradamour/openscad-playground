@@ -124,7 +124,7 @@ NOTO_FONTS=\
 
 public/libraries/fonts.zip: $(NOTO_FONTS) libs/liberation
 	mkdir -p public/libraries
-	zip -r $@ -j fonts.conf libs/noto/*.ttf libs/liberation/{*.ttf,LICENSE,AUTHORS}
+	zip -r $@ -j fonts.conf libs/noto/*.ttf libs/liberation/{*.ttf,LICENSE,AUTHORS} public/fonts/OverpassMonoFont.ttf
 
 libs/noto/%.ttf:
 	mkdir -p libs/noto
