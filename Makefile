@@ -52,7 +52,7 @@ dist/openscad-worker.js: src/openscad-worker.ts src/wasm/openscad.js
 	npx rollup -c
 
 src/wasm: libs/openscad-wasm
-	rm -f src/wasm
+	rm -rf src/wasm
 	ln -sf "$(shell pwd)/libs/openscad-wasm" src/wasm
 
 wasm: libs/openscad
