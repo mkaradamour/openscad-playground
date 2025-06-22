@@ -186,7 +186,7 @@ V3.04 Added use font instruction to the code, font file to be included in the do
     fixed code for boolean warning
 
 */
-use <OverpassMonoFont.ttf>
+use <fonts/OverpassMonoFont.ttf>
 /* [Basic Parameters] */
 
 /* --------------- Dual Letter Parameters - remove for Customizer App, comment out locally
@@ -306,9 +306,9 @@ specialCharacters = chr([9829, 9824, 9830, 9827, 9834, 9835, 9792, 9794, 8592, 8
 specialSymbols = chr([127794, 127795, 127804, 127809, 127863, 127865, 127866, 128008, 128021, 128076]);
 //echo("Special symbols:", specialSymbols);  // Uncomment to see what the symbols are
                          
-letterIDs = str("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$&<>*+@/\\", specialCharacters, specialSymbols);
-letterIDsOverp = str("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$&<>*+@/\\", specialCharacters);
-letterIDsRubik = str("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$&<>*+@/\\");
+letterIDs = str("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$&<>*+@/\\\\", specialCharacters, specialSymbols);
+letterIDsOverp = str("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$&<>*+@/\\\\", specialCharacters);
+letterIDsRubik = str("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$&<>*+@/\\\\");
 letterIDsSegoe = str(specialSymbols);
 glyphLists = [letterIDsOverp, letterIDsRubik, letterIDsSegoe];
                          
